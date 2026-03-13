@@ -1,0 +1,109 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+body {
+    display: flex;
+    flex-direction: column;       /* stack children top‑to‑bottom */
+    justify-content: flex-start;  /* start at the top */
+    align-items: center;          /* keep content centred horizontally */
+    min-height: 100vh;
+    background: #212121;
+    overflow-x: visible;
+    padding-bottom: 80px; 
+}
+
+.task-section {
+    width: 100%;
+    margin: 3rem 0;               /* vertical spacing between sections */
+}
+
+header img {
+    position: absolute;
+    top: 3%;
+    left: 1%;
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;            /* make it circular */
+    transition: transform 0.3s ease;
+}
+
+header img:hover {
+    transform: rotate(10deg);      /* fun rotate on hover */
+}
+
+
+.pt1 {
+    background: #ffce00;
+    padding: 20px;
+    max-width: 600px;
+    margin: 0 auto;
+    border-radius: 15px;          /* curved edges */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* subtle shadow for depth */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* smooth hover transition */
+}
+.pt1:hover {
+    transform: translateY(-5px); /* lift on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* stronger shadow on hover */
+}
+.pt1-image {
+    display: block;
+    max-width: 100%;
+    margin: 20px auto 0;
+    border: 4px solid #ffd700;
+    background: #fff8e1;
+    padding: 5px;
+    box-sizing: border-box;
+    border-radius: 10px;          /* curved image border */
+    transition: transform 0.3s ease;
+}
+.pt1-image:hover {
+    transform: scale(1.05); /* slightly enlarge on hover */
+}
+.download-btn {
+    display: inline-block;
+    margin: 1rem 0;
+    padding: 0.75rem 1.5rem;
+    background: #212121;
+    color: #ffce00;
+    text-decoration: none;
+    border: 2px solid #ffce00;
+    border-radius: 25px;          /* fully rounded button */
+    font-weight: bold;
+    transition: background 0.3s ease, color 0.3s ease, transform 0.3s ease;
+}
+
+.download-btn:hover {
+    background: #ffce00;
+    color: #212121;
+    transform: translateY(-2px); /* slightly lift on hover */
+}
+
+
+
+.contentBox {
+    font-weight: bolder
+}
+
+
+
+footer:hover {
+    background-color: #ffd700;     /* slightly lighter yellow */
+}
+
+footer {
+    position: fixed;        /* sit above everything, relative to viewport */
+    left: 0;
+    right: 0;
+    bottom: 0;              /* always at the bottom */
+    height: 60px;           /* whatever height you prefer */
+    padding: 20px;
+    background-color: #ffce00;
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+    z-index: 100;           /* stay on top */
+
+}
